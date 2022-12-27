@@ -1,4 +1,4 @@
-export default shipTypes = [
+const shipTypes = [
   {
     name: 'carrier',
     length: 5,
@@ -20,3 +20,5 @@ export default shipTypes = [
     length: 2,
   },
 ];
+
+export default shipTypes;

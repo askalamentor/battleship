@@ -1,4 +1,5 @@
 import Gameboard from '../class/gameboard';
+import shipTypes from '../class/shipTypes';
 
 describe('gameboard functions', () => {
   let testboard;
@@ -41,5 +42,11 @@ describe('gameboard functions', () => {
 
   test('rejects ship placement that exceeds y-axis wall', () => {
     expect(testboard.checkCollision([75, 85, 95, 105])).toBe(false);
+  });
+
+  test('return location of a ship', () => {
+    expect(testboard.setShipOnBoard(35, shipTypes[0], 'y')).toEqual([
+      35, 45, 55, 65, 75,
+    ]);
   });
 });
