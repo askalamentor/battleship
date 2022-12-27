@@ -1,0 +1,1 @@
+const randomAxis = ['x', 'y'][Math.floor(Math.random() * 2)]
